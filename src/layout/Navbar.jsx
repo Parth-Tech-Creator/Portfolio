@@ -49,10 +49,13 @@ export const Navbar = () => {
         {isMobileMenuOpen && (<div className="md:hidden glass-strong animate-fade-in">
             <div className="container mx-auto px-6 py-6 flex flex-col gap-4">
                     {navLinks.map((link, index) => (
-                        <a href ={link.href} key={index} className="text-lg text-muted-foreground hover:text-foreground py-2">
+                        <a href ={link.href}
+                        key={index}
+                        onClick={() => setIsMobileMenuOpen(false)}
+                        className="text-lg text-muted-foreground hover:text-foreground py-2">
                             {link.label}</a>
                     ))}
-                    <Button>Contact me</Button>
+                    <Button onClick={() => setIsMobileMenuOpen(false)}>Contact me</Button>
             </div>
         </div>
         )}
