@@ -50,7 +50,7 @@ export const Experience = () => {
                         My journey
                     </span>
                     <h2 className="text-4xl md:text-5xl font-bold mt-4 mb-5 animate-fade-in animation-delay-100 text-secondary-foreground">
-                        Experience that <span className="font-serif italic font-normal text-white">
+                        Experience that<span className="font-serif italic font-normal text-white">
                             {" "}Speakes volume.</span>
                     </h2>
                     <p className="text-muted-foreground animate-fade-in animation-delay-200">
