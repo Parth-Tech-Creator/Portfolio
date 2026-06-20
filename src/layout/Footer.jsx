@@ -31,7 +31,7 @@ export const Footer = () => {
             </a>
 
             <p className="mt-2 text-sm text-muted-foreground">
-              © {currentYear} pm. All rights reserved.
+              © {currentYear} Parth All rights reserved.
             </p>
           </div>
 
