@@ -1,41 +1,63 @@
 const experiences = [
     {
-        period: "2022-present",
-        role: "senior frontend engineer",
-        company: "tech innovators Inc.",
+        period: "2026 - Present",
+        role: "AI & Robotics Enthusiast",
+        company: "Current Focus",
         description:
-            "leading frontend architecture for a suite of fintech products. implied dinosour",
-        technologies: ["react", "typescript", "next.js", "graphql"],
+            "Exploring machine learning, LLMs, and intelligent systems while pursuing a degree in Robotics and AI. Building AI-powered applications and developing expertise in computer vision and intelligent systems through hands-on projects.",
+        technologies: [
+            "Python",
+            "PyTorch",
+            "Transformers",
+            "LLMs",
+            "Flask"
+        ],
         current: true,
     },
     {
-        period: "2022-present",
-        role: "senior frontend engineer",
-        company: "tech innovators Inc.",
+        period: "2025",
+        role: "Machine Learning & Computer Vision",
+        company: "Learning Through Projects",
         description:
-            "leading frontend architecture for a suite of fintech products. implied dinosour",
-        technologies: ["react", "typescript", "next.js", "graphql"],
+            "Built practical AI projects including face detection systems, object detection models, and a movie recommendation system. Gained experience in data preprocessing, model development, and computer vision techniques.",
+        technologies: [
+            "Python",
+            "Pandas",
+            "NumPy",
+            "OpenCV",
+            "Scikit-Learn"
+        ],
         current: false,
     },
     {
-        period: "2022-present",
-        role: "senior frontend engineer",
-        company: "tech innovators Inc.",
+        period: "2024",
+        role: "Full-Stack Development",
+        company: "Expanding Technical Skills",
         description:
-            "leading frontend architecture for a suite of fintech products. implied dinosour",
-        technologies: ["react", "typescript", "next.js", "graphql"],
+            "Built responsive web applications using React and explored backend development. Learned how complete systems are designed and developed while improving problem-solving and software engineering skills.",
+        technologies: [
+            "React",
+            "Tailwind CSS",
+            "Node.js",
+            "Express.js"
+        ],
         current: false,
     },
     {
-        period: "2022-present",
-        role: "senior frontend engineer",
-        company: "tech innovators Inc.",
+        period: "2023",
+        role: "Programming Foundations",
+        company: "Beginning the Journey",
         description:
-            "leading frontend architecture for a suite of fintech products. implied dinosour",
-        technologies: ["react", "typescript", "next.js", "graphql"],
+            "Started learning programming and web development fundamentals while building small projects. Developed strong problem-solving skills and gained experience with JavaScript and modern development tools.",
+        technologies: [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "Git"
+        ],
         current: false,
     }
-]
+];
 
 
 export const Experience = () => {
@@ -45,30 +67,30 @@ export const Experience = () => {
 
             <div className="container mx-auto px-6 relative z-10">
                 {/* section header */}
-                <div className="text-center max-w-3xl mb-16">
+                <div className="text-center max-w-3xl mx-auto mb-16">
                     <span className="text-secondary-foreground text-sm font-medium tracking-wider uppercase animate-fade-in">
-                        My journey
+                        My Journey
                     </span>
                     <h2 className="text-4xl md:text-5xl font-bold mt-4 mb-5 animate-fade-in animation-delay-100 text-secondary-foreground">
-                        Experience that<span className="font-serif italic font-normal text-white">
-                            {" "}Speakes volume.</span>
+                        Building Experience<span className="font-serif italic font-normal text-white">
+                            {" "}Through Projects.</span>
                     </h2>
                     <p className="text-muted-foreground animate-fade-in animation-delay-200">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam sequi, maxime nemo voluptate nesciunt officia ipsum voluptatum corrupti minima veritatis!
+                        From building websites to developing machine learning models, each project has been a step toward creating intelligent systems that solve real-world problems.
                     </p>
                 </div>
                 {/* timeline */}
                 <div className="relative">
-                    <div className="timeline-glow absolute left-0 md:left-1/2 top-0 bottom-0 w-[2px] bg-gradient-to-b from-primary/70 via-primary/30 to-transparent md:-translate-x-1/2 shadow-[0_0_25px_rgba(32,178,166,0.8)]"/>
+                    <div className="timeline-glow absolute left-0 md:left-1/2 top-0 bottom-0 w-[2px] bg-gradient-to-b from-primary/70 via-primary/30 to-transparent md:-translate-x-1/2 shadow-[0_0_25px_rgba(32,178,166,0.8)]" />
                     {/* experience item */}
                     <div className="space-y-12">
                         {experiences.map((exp, idx) => (
                             <div key={idx} className="relative grid md:grid-cols-2 gap-8 animate-fade-in"
-                            style={{animationDelay:`${(idx + 1) * 100}ms`}}>
+                                style={{ animationDelay: `${(idx + 1) * 100}ms` }}>
 
                                 {/* timeline dot */}
                                 <div className="absolute left-0 md:left-1/2 top-0 w-3 h-3 bg-primary rounded-full -translate-x-1/2 ring-4 ring-background z-10">
-                                {exp.current && (<span className="absolute inset-0 rounded-full bg-primary animate-ping opacity-75"/>)}
+                                    {exp.current && (<span className="absolute inset-0 rounded-full bg-primary animate-ping opacity-75" />)}
                                 </div>
 
                                 {/* content */}
@@ -80,9 +102,9 @@ export const Experience = () => {
                                         <p className="text-sm text-muted-foreground mt-4">{exp.description}</p>
                                         <div className={`flex flex-wrap gap-2 mt-4 ${idx % 2 == 0 ? "md:justify-end" : ""}`}>
                                             {exp.technologies.map((tech, techIdx) => (
-                                                <span 
-                                                key={techIdx}
-                                                className="px-3 py-1 bg-surface text-xs rounded-full text-muted-foreground">{tech}</span>
+                                                <span
+                                                    key={techIdx}
+                                                    className="px-3 py-1 bg-surface text-xs rounded-full text-muted-foreground">{tech}</span>
                                             ))}
                                         </div>
                                     </div>

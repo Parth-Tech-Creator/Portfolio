@@ -17,8 +17,8 @@ const projects = [
             "Summarizes long legal and government documents through a 9-level NLP pipeline, with every line traceable to its source passage and a built-in AI chatbot for document-specific Q&A.",
         image: "/projects/PolicyLens.png",
         tags: ["Python", "Flask", "React", "FAISS", "MongoDB"],
-        link: "https://github.com/arbind0705/AI_Summerizer", // add live demo URL if deployed
-        github: "#", // add your repo URL
+        link: "#", // add live demo URL if deployed
+        github: "https://github.com/arbind0705/AI_Summerizer", // add your repo URL
     },
     {
         title: "Travel Planning App",

@@ -1,13 +1,21 @@
-import { ChevronLeft, ChevronRight, DivideCircle, Quote, Mail, Phone, MapPin, Send, CheckCircle, AlertCircle } from "lucide-react";
+import {
+    Mail,
+    Phone,
+    MapPin,
+    Send,
+    CheckCircle,
+    AlertCircle
+} from "lucide-react";
+
 import { Button } from "@/components/Button";
 import { useState } from "react";
 import emailjs from "@emailjs/browser"
-const contactinfo = [
+const contactInfo = [
     {
         icon: Mail,
-        label: "mail",
+        label: "Email",
         value: "arbindjust10@gmail.com",
-        href: "mailto:arbind@gmail.com",
+        href: "mailto:arbindjust10@gmail.com",
     },
     {
         icon: Phone,
@@ -18,7 +26,7 @@ const contactinfo = [
     {
         icon: MapPin,
         label: "Location",
-        value: "Jhanjeri, mohali",
+        value: "Mohali, Punjab, India",
         href: "#",
     }
 ]
@@ -87,16 +95,18 @@ export const Contact = () => {
             </div>
 
             <div className="container mx-auto px-6 relative z-10">
-                <div className="text-center max-w-3xl mb-16">
+                <div className="text-center max-w-3xl mx-auto mb-16">
                     <span className="text-secondary-foreground text-sm font-medium tracking-wider uppercase animate-fade-in">
                         Contact
                     </span>
                     <h2 className="text-4xl md:text-5xl font-bold mt-4 mb-5 animate-fade-in animation-delay-100 text-secondary-foreground">
-                        for quality work<span className="font-serif italic font-normal text-white">
-                            {" "}that's Speakes volume.</span>
+                        Let's Build Something
+                        <span className="font-serif italic font-normal text-white">
+                            {" "}Meaningful.
+                        </span>
                     </h2>
                     <p className="text-muted-foreground animate-fade-in animation-delay-200">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam sequi, maxime nemo voluptate nesciunt officia ipsum voluptatum corrupti minima veritatis!
+                        I'm always excited to discuss AI, machine learning, robotics, and new opportunities. Whether it's a project, collaboration, or simply exchanging ideas, feel free to reach out.
                     </p>
                 </div>
 
@@ -134,9 +144,10 @@ export const Contact = () => {
                             </div>
 
                             <div>
-                                <label htmlFor="Message"
+                                <label htmlFor="message"
                                     className="block text-sm font-medium mb-2">Message</label>
                                 <textarea
+                                    id="message"
                                     rows={5}
                                     required
                                     placeholder="your message..."
@@ -154,7 +165,7 @@ export const Contact = () => {
                                 ) : (
                                     <>
                                         Send Message
-                                        <Send className="w-5 h-5"/>
+                                        <Send className="w-5 h-5" />
                                     </>
                                 )}
 
@@ -162,59 +173,61 @@ export const Contact = () => {
 
                             {submitStatus.type && (
                                 <div
-                                className={`flex items-center gap-3 p-4 rounded-xl ${
-                                    submitStatus.type === "success"
-                                    ? "bg-green-500/10 border border-green-500/20 text-green-500"
-                                    : "bg-red-500/10 border border-red-500/20 text-red-500"
-                                }`}>
+                                    className={`flex items-center gap-3 p-4 rounded-xl ${submitStatus.type === "success"
+                                        ? "bg-green-500/10 border border-green-500/20 text-green-500"
+                                        : "bg-red-500/10 border border-red-500/20 text-red-500"
+                                        }`}>
                                     {submitStatus.type === "success" ? (
                                         <CheckCircle className="w-5 h-5 flex-shrink-0" />
 
                                     ) : (
-                                        <AlertCircle className= "w-5 h-5 flex-shrink-0" />
+                                        <AlertCircle className="w-5 h-5 flex-shrink-0" />
                                     )
-                                }
-                                <p className="text-sm" >{submitStatus.message}</p>
+                                    }
+                                    <p className="text-sm" >{submitStatus.message}</p>
                                 </div>
                             )}
                         </form>
                     </div>
-                            {/* contact info */}
-                            <div
-                            className="space-y-6 animate-fade-in animation-delay-400">
-                                <div className="glass rounded-3xl p-8">
-                                    <h3 className="text-xl font-semibold mb-6">
-                                        Contact Information
-                                    </h3>
-                                    <div className="space-y-4">
-                                        {contactinfo.map((item, i) => (
-                                            <a
-                                            key={i}
-                                            href={item.href}
-                                            className="flex items-center gap-4 rounded-xl hover:bg-surface transition-colors gr">
-                                                <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center gro">
-                                                <item.icon className="w-5 h-5 text-primary" />
-                                                </div>
-                                                <div>
-                                                    <div className="text-sm text-muted-foreground">
-                                                        {item.label}
-                                                    </div>
-                                                    <div className="font-medium">{item.value}</div>
-                                                </div>
-                                            </a>
-                                        ))}
-                                    </div>
-                                </div>
-                                <div className="glass rounded-3xl p-8 border border-primary/30">
-                                <div className="flex items-center gap-3 mb-4">
-                                    <span  className="w-3 h-3 bg-green-500 rounded-full animate-pulse"/>
-                                    <span className="font-medium">Currently Avalable</span>
-                                </div>
-                                <p className="text-muted-foreground text-sm">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum quam tempora quidem sequi expedita esse amet perspiciatis fuga eius modi.
-                                </p>
-                                </div>
+                    {/* contact info */}
+                    <div
+                        className="space-y-6 animate-fade-in animation-delay-400">
+                        <div className="glass rounded-3xl p-8">
+                            <h3 className="text-xl font-semibold mb-6">
+                                Contact Information
+                            </h3>
+                            <div className="space-y-4">
+                                {contactInfo.map((item, i) => (
+                                    <a
+                                        key={i}
+                                        href={item.href}
+                                        className="flex items-center gap-4 rounded-xl hover:bg-surface transition-colors gr">
+                                        <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center gro">
+                                            <item.icon className="w-5 h-5 text-primary" />
+                                        </div>
+                                        <div>
+                                            <div className="text-sm text-muted-foreground">
+                                                {item.label}
+                                            </div>
+                                            <div className="font-medium">{item.value}</div>
+                                        </div>
+                                    </a>
+                                ))}
                             </div>
+                        </div>
+                        <div className="glass rounded-3xl p-8 border border-primary/30">
+                            <div className="flex items-center gap-3 mb-4">
+                                <span className="w-3 h-3 bg-green-500 rounded-full animate-pulse" />
+                                <span className="font-medium">
+                                    Open to Opportunities
+                                </span>
+                            </div>
+
+                            <p className="text-muted-foreground text-sm">
+                                I'm currently seeking AI/ML internship opportunities and collaborative projects. I usually respond to messages within 24 hours.
+                            </p>
+                        </div>
+                    </div>
 
                 </div>
             </div>

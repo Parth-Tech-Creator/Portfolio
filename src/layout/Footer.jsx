@@ -1,15 +1,16 @@
-import { GitBranch, Mail, Phone } from "lucide-react";
+import { GitBranch, Mail, Phone, Cpu } from "lucide-react";
 
 const socialLinks = [
-  { icon: GitBranch, href: "#", label: "GitHub" },
-  { icon: Mail, href: "#", label: "Email" },
-  { icon: Phone, href: "#", label: "Phone" },
+  { icon: GitBranch, href: "https://github.com/arbind0705", label: "GitHub" },
+  { icon: Mail, href: "mailto:arbindmalava@gmail.com", label: "Email" },
+  { icon: Phone, href: "tel:+917482088584", label: "Phone" },
 ];
 
 const footerLinks = [
   { href: "#about", label: "About" },
   { href: "#projects", label: "Projects" },
   { href: "#experience", label: "Experience" },
+  { href: "#reflection", label: "Reflection" },
   { href: "#contact", label: "Contact" },
 ];
 
@@ -19,29 +20,30 @@ export const Footer = () => {
   return (
     <footer className="py-8 border-t border-border mt-20">
       <div className="container mx-auto px-6">
-        <div className="flex flex-col md:flex-row items-center justify-between gap-8">
+        <div className="flex flex-col md:flex-row items-center gap-8">
 
           {/* Left */}
-          <div className="text-center md:text-left">
+          <div className="flex-1 text-center md:text-left">
             <a
-              href="#"
-              className="text-xl font-bold tracking-tight"
+              href="#top"
+              className="text-xl font-bold tracking-tight flex items-center gap-1"
             >
-              pm<span className="text-primary">.</span>
+              <Cpu size={20} />
+              T<span className="text-primary">.</span>
             </a>
 
             <p className="mt-2 text-sm text-muted-foreground">
-              © {currentYear} Parth All rights reserved.
+              © {currentYear} Arbind Malava. Crafted with curiosity and code.
             </p>
           </div>
 
           {/* Center */}
-          <nav className="flex flex-wrap justify-center gap-6">
+          <nav className="flex-1 flex flex-wrap justify-center gap-6">
             {footerLinks.map((link) => (
               <a
                 key={link.href}
                 href={link.href}
-                className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+                className="text-sm text-muted-foreground hover:text-primary transition-all duration-300"
               >
                 {link.label}
               </a>
@@ -49,7 +51,7 @@ export const Footer = () => {
           </nav>
 
           {/* Right */}
-          <div className="flex items-center gap-3">
+          <div className="flex-1 flex justify-center md:justify-end items-center gap-3">
             {socialLinks.map((social) => (
               <a
                 key={social.label}
