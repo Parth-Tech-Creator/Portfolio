@@ -29,6 +29,20 @@ const projects = [
         link: "#",
         github: "https://github.com/arbind0705/Class-project",
     },
+    {
+        title: "Drone Assembly",
+        description:
+            "Hands-on hardware project focused on assembling a quadcopter and understanding flight controllers, ESCs, brushless motors, and wireless communication systems.",
+        image: "/projects/D-Parts.jpg",
+        tags: [
+            "Flight Controller",
+            "Brushless Motors",
+            "ESC",
+            "FlySky"
+        ],
+        link: "#",
+        github: "https://github.com/arbind0705/Drone",
+    },
 ];
 
 export const Projects = () => {
