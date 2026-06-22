@@ -1,9 +1,9 @@
 import { GitBranch, Mail, Phone, Cpu } from "lucide-react";
 
 const socialLinks = [
-  { icon: GitBranch, href: "https://github.com/arbind0705", label: "GitHub" },
-  { icon: Mail, href: "mailto:arbindmalava@gmail.com", label: "Email" },
-  { icon: Phone, href: "tel:+917482088584", label: "Phone" },
+  { icon: GitBranch, href: "https://github.com/Parth-Tech-Creator", label: "GitHub" },
+  { icon: Mail, href: "mailto:parth.321.06@gmail.com", label: "Email" },
+  { icon: Phone, href: "tel:+918168781031", label: "Phone" },
 ];
 
 const footerLinks = [
@@ -29,11 +29,11 @@ export const Footer = () => {
               className="text-xl font-bold tracking-tight flex items-center gap-1"
             >
               <Cpu size={20} />
-              T<span className="text-primary">.</span>
+              P<span className="text-primary">.</span>
             </a>
 
             <p className="mt-2 text-sm text-muted-foreground">
-              © {currentYear} Arbind Malava. Crafted with curiosity and code.
+              © {currentYear} Parth. Crafted with curiosity and code.
             </p>
           </div>
 

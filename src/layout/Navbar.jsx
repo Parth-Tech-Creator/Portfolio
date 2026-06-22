@@ -27,7 +27,7 @@ export const Navbar = () => {
             <nav className="container mx-auto px-6 flex items-center justify-between">
                 <a href="#"
                     className="text-xl font-bold tracking-tight hover:text-primary flex items-center gap-1">
-                    < Cpu size={24}/>T<span className="text-primary">.</span>
+                    < Cpu size={24}/>P<span className="text-primary">.</span>
                 </a>
                 {/* Desktop Nav */}
                 <div className="hidden md:flex items-center gap-1">

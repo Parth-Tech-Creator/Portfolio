@@ -59,7 +59,7 @@ export const Hero = () => {
                             </span>
                         </h1>
                         <p className="text-lg text-muted-foreground max-w-lg animate-fade-in animation-delay-200">
-                            Hi, I'm Arbind Malava, a final-year CS student diving deep into AI/ML — building things like intelligent routing simulators and an AI-powered document summarizer to understand how these systems actually work. I also build full-stack, and started out in robotics, which still shapes how I approach problems.
+                            Hi, I'm Parth, a final-year CS student diving deep into AI/ML — building things like intelligent routing simulators and an AI-powered document summarizer to understand how these systems actually work. I also build full-stack, and started out in robotics, which still shapes how I approach problems.
                         </p>
                     </div>
                     {/* CTAS */}
@@ -69,7 +69,7 @@ export const Hero = () => {
                             Contact me <ArrowRight className="w-5 h-5" />
                         </Button>
                         </a>
-                        <a href="/Arbind_Resume.pdf" download="Arbind_Malava_resume.pdf">
+                        <a href="/Parth_resume.pdf" download="Parth_resume.pdf">
                         <AnimatedBorderButton>
                             <Download className="w-5 h-5" />
                             Download CV
@@ -80,9 +80,9 @@ export const Hero = () => {
                     <div className="flex items-center gap-4 animate-fade-in animation-delay-400">
                         <span className="text-sm text-muted-foreground"> Follow: </span>
                         {[
-                            { icon: GitBranch, href: "https://github.com/arbind0705" },
-                            { icon: Globe, href: "https://www.linkedin.com/in/arbind-malava-08a7b1283/" },
-                            { icon: Mail, href: "mailto:arbindmalava@gmail.com" },
+                            { icon: GitBranch, href: "https://github.com/Parth-Tech-Creator" },
+                            { icon: Globe, href: "https://www.linkedin.com/in/parth-2a4607349/" },
+                            { icon: Mail, href: "mailto:parth.321.06@gmail.com" },
                         ].map((social, idx) => (
                             <a key={idx} href={social.href} className="p-2 rounded-full glass hover:bg-primary/10 hover:text-primary transition-all duration-300">
                                 {<social.icon className="w-5 h-5" />}</a>
@@ -95,7 +95,7 @@ export const Hero = () => {
                     <div className="relative max-w-md mx-auto">
                         <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-primary/30 via-transparent to-primary/10 blur-2xl animate-pulse" />
                         <div className="relative glass rounded-3xl p-2 glow-border">
-                            <img src="/AM.png" alt="Arbind" className="w-full aspect-[4/5] object-cover rounded-2xl" />
+                            <img src="/abc.jpg" alt="Parth" className="w-full aspect-[4/5] object-cover rounded-2xl" />
                             {/* floating badge */}
                             <div className="absolute -bottom-4 -right-4 glass rounded-xl px-4 py-3 animate-float">
                                 <div className="flex items-center gap-3">

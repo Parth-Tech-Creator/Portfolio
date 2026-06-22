@@ -14,13 +14,13 @@ const contactInfo = [
     {
         icon: Mail,
         label: "Email",
-        value: "arbindjust10@gmail.com",
+        value: "parth.321.06@gmail.com",
         href: "mailto:arbindjust10@gmail.com",
     },
     {
         icon: Phone,
         label: "Phone",
-        value: "+91 7482088584",
+        value: "+91 8168781031",
         href: "tel:+917482088584",
     },
     {

@@ -9,7 +9,7 @@ const projects = [
         image: "/projects/Horizen.png",
         tags: ["Python", "Flask", "React", "LLaMA 3.1"],
         link: "#", // deployment pending per your resume — add once live
-        github: "https://github.com/arbind0705/Horizon", // add your repo URL
+        github: "https://github.com/Parth-Tech-Creator/horizen", // add your repo URL
     },
     {
         title: "AI Summarizer",
@@ -18,7 +18,7 @@ const projects = [
         image: "/projects/PolicyLens.png",
         tags: ["Python", "Flask", "React", "FAISS", "MongoDB"],
         link: "#", // add live demo URL if deployed
-        github: "https://github.com/arbind0705/AI_Summerizer", // add your repo URL
+        github: "https://github.com/Parth-Tech-Creator/PolicyLens", // add your repo URL
     },
     {
         title: "Travel Planning App",
@@ -113,7 +113,7 @@ export const Projects = () => {
                 </div>
                 {/* view all cta */}
                 <div className="text-center mt-12 animate-fade-in animation-delay-500">
-                    <a href="https://github.com/arbind0705" target="_blank" rel="noopener noreferrer">
+                    <a href="https://github.com/Parth-Tech-Creator?tab=repositories" target="_blank" rel="noopener noreferrer">
                         <AnimatedBorderButton>
                             View All Projects
                             <ArrowRight className="w-5 h-5" />
