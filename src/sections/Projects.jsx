@@ -27,7 +27,7 @@ const projects = [
         image: "/projects/TPP.png",
         tags: ["HTML", "CSS", "JavaScript"],
         link: "#",
-        github: "https://github.com/arbind0705/Class-project",
+        github: "https://github.com/Parth-Tech-Creator/TPA",
     },
     {
         title: "Drone Assembly",
